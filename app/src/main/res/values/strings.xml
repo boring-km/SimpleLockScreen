@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleLockScreen</string>
+    <string name="test_location_value">%1$s:%2$.0f</string>
+    <string name="finish">종료</string>
+</resources>
