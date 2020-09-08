@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/test_location_value"
-            android:textColor="@color/colorAccent"
+            android:textColor="@android:color/background_light"
             android:textSize="24sp" />
 
         <TextView
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/test_location_value"
-            android:textColor="@android:color/holo_red_light"
+            android:textColor="@android:color/background_light"
             android:textSize="24sp" />
 
     </LinearLayout>
