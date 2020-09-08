@@ -5,16 +5,15 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import android.widget.Toast
 
 class OnLockReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         when {
             intent!!.action.equals(Intent.ACTION_SCREEN_ON) -> {
-                Log.e("onReceive", "SCREEN_ON");
-                val startLockScreenIntent = Intent(context, LockScreenActivity::class.java);
-                startLockScreenIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                val pendingIntent = PendingIntent.getActivity(context, 0, startLockScreenIntent, 0);
+                Log.e("onReceive", "SCREEN_ON")
+                val startLockScreenIntent = Intent(context, LockScreenActivity::class.java)
+                startLockScreenIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                val pendingIntent = PendingIntent.getActivity(context, 0, startLockScreenIntent, 0)
                 pendingIntent.send()
             }
             intent.action.equals(Intent.ACTION_SCREEN_OFF) -> {
