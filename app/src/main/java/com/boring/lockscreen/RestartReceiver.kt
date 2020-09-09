@@ -7,7 +7,7 @@ import android.content.Intent
 class RestartReceiver : BroadcastReceiver() {
 
     companion object {
-        val ACTION_RESTART_SERVICE = "RestartReceiver.restart"
+        const val ACTION_RESTART_SERVICE = "RestartReceiver.restart"
     }
 
     override fun onReceive(context: Context?, intent: Intent?) {
