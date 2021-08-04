@@ -33,6 +33,10 @@ class LockScreenActivity : AppCompatActivity() {
                 }
             }
         )
+
+        unlock_button.setOnClickListener {
+            finish()
+        }
     }
 
     private fun makeFullScreen() {
